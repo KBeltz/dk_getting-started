@@ -11,7 +11,7 @@ export class ProductListComponent implements OnInit {
   imageMargin: number = 2;
   showImage: boolean = false;
   filteredProducts: IProduct[];
-  _listFilter: string;
+  private _listFilter: string;
   get listFilter(): string {
     return this._listFilter;
   }
