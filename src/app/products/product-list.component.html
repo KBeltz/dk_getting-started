@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="table-responsive">
-      <table class="table">
+      <table class="table" *ngIf="products && products.length">
         <thead>
           <tr>
             <th>
@@ -30,7 +30,16 @@
             <th>5 Star Rating</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <td>{{ product.image }}</td>
+            <td>{{ product.productName }}</td>
+            <td>{{ product.productCode }}</td>
+            <td>{{ product.releaseDate }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.starRating }}</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
