@@ -3,7 +3,7 @@
     {
       "root": "src",
       "outDir": "dist",
-      "assets": ["assets", "favicon.ico"],
+      "assets": ["assets", "favicon.ico", "api"],
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
