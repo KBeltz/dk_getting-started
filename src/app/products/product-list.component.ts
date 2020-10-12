@@ -29,7 +29,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
     this.products = this.productService.getProducts();
     this.filteredProducts = this.products;
-    this.listFilter = "cart";
+    this.listFilter = "";
   }
 
   onRatingClicked(message: string) {
