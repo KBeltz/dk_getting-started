@@ -8,4 +8,4 @@ import { StarComponent } from './star.component';
   imports: [CommonModule],
   exports: [StarComponent, CommonModule, FormsModule]
 })
-export class AppModule {}
+export class SharedModule {}
